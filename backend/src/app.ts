@@ -10,14 +10,14 @@ import { DB_ADDRESS } from './config';
 import routes from './routes';
 
 const { PORT = 3000 } = process.env;
-console.log(process.env)
+console.log(process.env);
 const app = express();
 mongoose.connect(DB_ADDRESS);
 
 // Только для локальных тестов. Не используйте это в продакшене
 app.use(cors({
-  origin: 'http://acrosstheworld.nomoredomains.rocks'
-}))
+  origin: 'http://acrosstheworld.nomoredomains.rocks',
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
