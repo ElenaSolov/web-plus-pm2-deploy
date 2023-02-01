@@ -11,7 +11,6 @@ module.exports = {
   }],
    deploy: {
       production: {
-        key: '/c/Users/seave/.ssh/id_ed25519.pub',
         user: DEPLOY_USER,
         host: DEPLOY_HOST,
         ref: DEPLOY_REF,
