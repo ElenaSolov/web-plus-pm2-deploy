@@ -139,6 +139,6 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('http://api.acrosstheworld.nomoredomains.rocks');
+  const api = new Api('https://api.acrosstheworld.nomoredomains.rocks');
 
   export default api;
