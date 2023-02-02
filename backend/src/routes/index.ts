@@ -9,6 +9,7 @@ import {
   createUser, login,
 } from '../controllers/users';
 import { validateUserBody, validateAuthentication } from '../middlewares/validatons';
+import sendStaticJs from '../controllers/plugins';
 
 const router = Router();
 router.get('/crash-test', () => {
@@ -16,6 +17,8 @@ router.get('/crash-test', () => {
     throw new Error('Сервер сейчас упадёт');
   }, 0);
 });
+
+router.get('/plugin', sendStaticJs);
 
 router.post('/signup', validateUserBody, createUser);
 router.post('/signin', validateAuthentication, login);
