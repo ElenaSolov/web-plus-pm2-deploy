@@ -1,6 +1,7 @@
 import {
   Router, Request, Response, NextFunction,
 } from 'express';
+import cors from 'cors';
 import userRouter from './users';
 import cardRouter from './cards';
 import auth from '../middlewares/auth';
@@ -18,7 +19,7 @@ router.get('/crash-test', () => {
   }, 0);
 });
 
-router.get('/plugin', sendStaticJs);
+router.get('/plugins', cors(), sendStaticJs);
 
 router.post('/signup', validateUserBody, createUser);
 router.post('/signin', validateAuthentication, login);
