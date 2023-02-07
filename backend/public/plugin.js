@@ -1,11 +1,11 @@
 /* eslint-disable */
 
 const popupStyles =
-  "position: fixed;font-family: Arial, sans-serif;font-size: 20px;display: flex;justify-content: center;align-items: center;top: 0;left: 0;bottom: 0;right: 0;z-index: 1;background: rgba(20, 33, 33, 0.8);";
+  "position: fixed;font-family: Arial, sans-serif;font-size: 20px;display: flex;justify-content: center;align-items: center;top: 0;left: 0;bottom: 0;right: 0;z-index: 2;background: rgba(20, 33, 33, 0.8);";
 const popupVisibleStyles = "display: flex";
 const iframeStyles =
   "box-sizing: border-box;background-color: #fff;width: calc(100% - 40px);max-width: 2500px;max-height: 70%;padding: 100px 100px;height: 90%;display: grid;grid-template-columns: 1fr 1000px;gap: 170px;align-items: center;";
-const closeBtnStyles = "position: absolute;z-index: 2;top: 10px;right: 20px;";
+const closeBtnStyles = "position: absolute;z-index: 3;top: 10px;right: 20px;";
 const linksStyles =
   "height: 100%;box-sizing: border-box;display: flex;flex-direction: column;justify-content: space-between;background-image: linear-gradient(180deg, rgba(83, 83, 99, 0.66) 68.23%, rgba(22, 18, 236, 0) 100%);border-radius: 41px;list-style-type: none;margin: 0;padding: 70px 70px;";
 const linksItem =
